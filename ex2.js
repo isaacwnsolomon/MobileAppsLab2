@@ -12,5 +12,18 @@ function listAllTasks() {
         console.log("Task " + element + " is on our Tasks Array.");
     });
 }
+function deleteTask(task) {
+    var index;
+    index = Tasks.indexOf(task);
+    if (index > -1) {
+        Tasks.splice(index, 1);
+        console.log(task + " has been deleted from our Tasks Array");
+    }
+    else {
+        console.log(task + " was not found in our Tasks Array");
+    }
+    return Tasks.length;
+}
 addTask("Eat Lunch");
 listAllTasks();
+deleteTask("Eat Lunch");
