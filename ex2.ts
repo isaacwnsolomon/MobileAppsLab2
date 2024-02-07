@@ -9,4 +9,13 @@ function addTask(task:string):number{
     return length;
 }
 
+function listAllTasks():void{
+    //for(let i=0; i<addTask.length;i++){  
+   // }
+   Tasks.forEach(function(element){
+    console.log("Task "+element+ " is on our Tasks Array.")
+   })
+}
+
 addTask("Eat Lunch");
+listAllTasks();
