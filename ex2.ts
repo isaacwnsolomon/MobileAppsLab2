@@ -30,6 +30,8 @@ function deleteTask(task: string): number {
     return Tasks.length;
 }
 
+
+
 addTask("Eat Lunch");
 listAllTasks();
 deleteTask("Eat Lunch");
